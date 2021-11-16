@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
   name = 'MATEU',
-  packages = ['MATEU'],
+  packages = ['chess'],
   version = 'v0.0.0',
   license='cc-by-sa-4.0',
   description = 'A fast chess library for chess engines development including an interface to play games with easy, efficient and short controls, simple piece-value evaluation, and a compressed python version of Mateu Chess Engine',
