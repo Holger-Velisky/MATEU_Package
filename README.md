@@ -1,9 +1,10 @@
 # MATEU Package
 A fast chess library for chess engines development including an interface to play games with easy, efficient and short controls, simple piece-value evaluation, and a compressed python version of Mateu Chess Engine. Hoping to be able to add engine features and an implementation of pygame to make the game easier to play.
 ```shell
-python setup.py sdist
+python3 setup.py sdist
 pip install twine
 twine upload dist/*
+echo 'mateu'
 
 ```
 ## [License](https://github.com/Holger-Velisky/MATEU_package/blob/main/LICENSE.txt): Attribution-NonCommercial-ShareAlike 4.0 International
