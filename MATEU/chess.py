@@ -109,6 +109,7 @@ class Chess:
             self.turn=not self.turn
             self.movecount+=self.turn
             self.get_fen()
+            return uci
         def show(self,mode=None):
             if mode in {None,"None",0}:
                 os.system("clear" if os.name=="posix" else "cls")
@@ -286,7 +287,10 @@ def fromfen(fe,fenreg=None):
                 movecount=int(i)
     return (Board,turn,kingsmoved,rooksmoved,enpassant,push_or_take,movecount,fenregister)
 class engine:
-    def __init__(self, board, depth=0): self.board,self.depth,self.DEPTH=board,depth,depth
+    def __init__(self, board=None, depth=0): 
+        if board==None:
+            board=Chess()
+        self.board,self.depth,self.DEPTH=board,depth,depth
     def get(self, move=None): 
         a=(self.board.after_move_score(),move) if self.depth==0 or self.board.gamestatus()[0] else (max(map(self.get_score,self.board.legalMoves())) if self.board.turn else min(map(self.get_score,self.board.legalMoves())))
         return tuple(a)

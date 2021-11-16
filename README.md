@@ -4,7 +4,6 @@ A fast chess library for chess engines development including an interface to pla
 python3 setup.py sdist
 pip install twine
 twine upload dist/*
-echo 'mateu'
 
 ```
 ## [License](https://github.com/Holger-Velisky/MATEU_package/blob/main/LICENSE.txt): Attribution-NonCommercial-ShareAlike 4.0 International
