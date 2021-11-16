@@ -1,14 +1,14 @@
 from distutils.core import setup
 setup(
   name = 'MATEU-package',
-  packages = ['MATEU-package'],
+  packages = ['MATEU_package'],
   version = 'v0.0.0',
   license='cc-by-sa-4.0',
   description = 'A fast chess library for chess engines development including an interface to play games with easy, efficient and short controls, simple piece-value evaluation, and a compressed python version of Mateu Chess Engine',
   author = 'Albert Mateu Carrasco',
   author_email = 'albertmateucarrasco@gmail.com',
-  url = 'https://github.com/Holger-Velisky/MATEU-package',
-  download_url = 'https://github.com/Holger-Velisky/MATEU-package/archive/refs/tags/v0.0.0.tar.gz',    # I explain this later on
+  url = 'https://github.com/Holger-Velisky/MATEU_package',
+  download_url = 'https://github.com/Holger-Velisky/MATEU_package/archive/refs/tags/v0.0.0.tar.gz',    # I explain this later on
   keywords = ['CHESS', 'PYTHON', 'BOARD', 'GAMES', 'IA', 'ENGINE', 'MATEU', 'LICHESS', 'SOCKFISH', "ML","MULTIPROCESSING","DATA SCIENCE","FINANCE","CRYPTO","CYBERSECURITY","MULTIPURPOSE"],
   install_requires=[
           'chess',
